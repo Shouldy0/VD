@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VD Agency — Digital Creative Studio</title>
+    <meta name="description" content="Siamo una digital creative studio specializzata in soluzioni innovative e design accattivante per aiutare le aziende a crescere nel mondo digitale.">
+    <meta name="author" content="VD Agency">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.vdagency.it/">
+    <meta property="og:title" content="VD Agency — Digital Creative Studio">
+    <meta property="og:description" content="Siamo una digital creative studio specializzata in soluzioni innovative e design accattivante per aiutare le aziende a crescere nel mondo digitale.">
+    <meta property="og:image" content="https://www.vdagency.it/assets/og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.vdagency.it/">
+    <meta property="twitter:title" content="VD Agency — Digital Creative Studio">
+    <meta property="twitter:description" content="Siamo una digital creative studio specializzata in soluzioni innovative e design accattivante per aiutare le aziende a crescere nel mondo digitale.">
+    <meta property="twitter:image" content="https://www.vdagency.it/assets/og.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Calendly Widget CSS -->
+    <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+    
+    <!-- Calendly Widget CSS -->
+    <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- JSON-LD for Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "VD Agency",
+        "description": "Digital creative studio specializzata in soluzioni innovative e design accattivante",
+        "url": "https://www.vdagency.it/",
+        "logo": "https://www.vdagency.it/assets/logo.svg",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+39-000-000-0000",
+            "contactType": "customer service",
+            "areaServed": "IT",
+            "availableLanguage": "it"
+        },
+        "sameAs": [
+            "https://x.com/vdagency27786?s=21&t=h77zfdBBzjG3ci77D3XPXA",
+            "https://www.instagram.com/daianavaiani0?igsh=MXViN2xqZzFhcWp6eA%3D%3D&utm_source=qr",
+            "https://www.tiktok.com/@vdagencyita?_t=ZN-9015f0OvpiN&_r=1"
+        ]
+    }
+    </script>
+
+    <div class="page-container">
+        <!-- Header -->
+        <header class="header sticky">
+            <div class="container">
+                <nav class="nav">
+                    <a href="#home" class="nav-brand">
+                        <!-- VD monogram SVG -->
+                        <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" fill="#0f0f12"/>
+                          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#f6f7fb" font-size="24" font-family="Inter, sans-serif" font-weight="bold">VD</text>
+                        </svg>
+                    </a>
+                    <div class="nav-menu">
+                        <a href="#servizi" class="nav-link">Servizi</a>
+                        <a href="#progetti" class="nav-link">Progetti</a>
+                        <a href="#chi-siamo" class="nav-link">Chi siamo</a>
+                        <a href="#privacy" class="nav-link">Privacy</a>
+                        <a href="#cookie" class="nav-link">Cookie</a>
+                    </div>
+                    <button class="btn btn-primary calendly-button" data-url="https://calendly.com/daianavaiani20/30min">Prenota</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="section hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Costruiamo <span class="gradient-text">brand</span> e siti che performano.</h1>
+                    <p>Design strategico, esperienze digitali coinvolgenti e soluzioni personalizzate per far crescere il tuo business</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary calendly-button" data-url="https://calendly.com/daianavaiani20/30min">Prenota</button>
+                        <button class="btn btn-secondary" data-scroll-to="#progetti">Guarda i lavori</button>
+                    </div>
+                    <div class="hero-badges">
+                        <span class="badge">Brand Identity</span>
+                        <span class="badge">Web Design</span>
+                        <span class="badge">Performance</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prenota Section -->
+        <section id="prenota" class="section prenota">
+            <div class="container">
+                <h2>Prenota una consulenza</h2>
+                <div id="calendly-inline-widget" data-url="https://calendly.com/daianavaiani20/30min" style="min-height: 700px;"></div>
+                <div id="calendly-fallback" style="display: none;">
+                    <p>Impossibile caricare il widget di Calendly. <a href="https://calendly.com/daianavaiani20/30min" target="_blank">Apri Calendly in una nuova scheda</a>.</p>
+                </div>
+                <noscript>
+                    <p><a href="https://calendly.com/daianavaiani20/30min" target="_blank">Apri Calendly in nuova scheda</a></p>
+                </noscript>
+            </div>
+        </section>
+
+        <!-- Servizi Section -->
+        <section id="servizi" class="section servizi">
+            <div class="container">
+                <h2>I Nostri Servizi</h2>
+                <div class="grid">
+                    <div class="card service-card">
+                        <h3>Branding Starter</h3>
+                        <p>Identità visiva completa per lanciare il tuo brand con successo</p>
+                        <div class="price">€890 una tantum</div>
+                        <button class="btn btn-primary calendly-button" data-url="https://calendly.com/daianavaiani20/30min">Richiedi preventivo</button>
+                    </div>
+                    <div class="card service-card">
+                        <h3>Website Pro</h3>
+                        <p>Sito web professionale con funzionalità avanzate e design personalizzato</p>
+                        <div class="price">da €2.400</div>
+                        <button class="btn btn-primary calendly-button" data-url="https://calendly.com/daianavaiani20/30min">Richiedi preventivo</button>
+                    </div>
+                    <div class="card service-card">
+                        <h3>Social Growth</h3>
+                        <p>Gestione e crescita dei tuoi canali social con contenuti strategici</p>
+                        <div class="price">€790/mese</div>
+                        <button class="btn btn-primary calendly-button" data-url="https://calendly.com/daianavaiani20/30min">Richiedi preventivo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progetti Section -->
+        <section id="progetti" class="section progetti">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="main-project">
+                    <div class="card project-card large">
+                        <div class="card-image" style="background-color: #15151b; height: 400px;">
+                            <!-- TODO: Replace with real project image -->
+                        </div>
+                        <div class="project-content">
+                            <h3>Progetto Esempio</h3>
+                            <p>Descrizione dettagliata del progetto principale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid project-grid">
+                    <div class="card project-card">
+                        <div class="card-image" style="background-color: #15151b; height: 200px;">
+                            <!-- TODO: Replace with real project image -->
+                        </div>
+                        <h3>Rebrand SaaS</h3>
+                        <p>Ridefinizione dell'identità per una startup SaaS</p>
+                    </div>
+                    <div class="card project-card">
+                        <div class="card-image" style="background-color: #15151b; height: 200px;">
+                            <!-- TODO: Replace with real project image -->
+                        </div>
+                        <h3>E-commerce fashion</h3>
+                        <p>Design e sviluppo per un brand di moda emergente</p>
+                    </div>
+                    <div class="card project-card">
+                        <div class="card-image" style="background-color: #15151b; height: 200px;">
+                            <!-- TODO: Replace with real project image -->
+                        </div>
+                        <h3>Launch B2B</h3>
+                        <p>Identità completa per una nuova azienda B2B</p>
+                    </div>
+                    <div class="card project-card">
+                        <div class="card-image" style="background-color: #15151b; height: 200px;">
+                            <!-- TODO: Replace with real project image -->
+                        </div>
+                        <h3>Content Engine</h3>
+                        <p>Strategia e contenuti per il growth di un brand</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chi Siamo Section -->
+        <section id="chi-siamo" class="section chi-siamo">
+            <div class="container">
+                <h2>Chi Siamo</h2>
+                <div class="grid">
+                    <div class="card about-card">
+                        <h3>Metodo</h3>
+                        <p>Approccio strategico e dati-driven per ogni progetto, con focus sui risultati e sull'esperienza utente</p>
+                    </div>
+                    <div class="card about-card">
+                        <h3>Stack</h3>
+                        <p>Tecnologie moderne e strumenti professionali per garantire qualità e performance</p>
+                    </div>
+                    <div class="card about-card">
+                        <h3>Valori</h3>
+                        <p>Trasparenza, creatività e collaborazione al centro di ogni relazione professionale</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta">
+            <div class="container">
+                <h2>Parliamo del tuo progetto?</h2>
+                <button class="btn btn-primary calendly-button" data-url="https://calendly.com/daianavaiani20/30min">Contattaci</button>
+            </div>
+        </section>
+
+        <!-- Contatti Section -->
+        <section id="contatti" class="section contatti">
+            <div class="container">
+                <h2>Contatti</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <input type="text" name="nome" placeholder="Nome" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <textarea name="messaggio" placeholder="Messaggio" rows="5" required></textarea>
+                            <input type="hidden" name="utm" id="utm" value="">
+                            <button type="submit" class="btn btn-primary">Invia</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Info</h3>
+                        <p>Email: <a href="mailto:daianavaiani20@gmail.com">daianavaiani20@gmail.com</a></p>
+                        <p>X: <a href="https://x.com/vdagency27786?s=21&t=h77zfdBBzjG3ci77D3XPXA" target="_blank" rel="noopener">https://x.com/vdagency27786</a></p>
+                        <p>Instagram: <a href="https://www.instagram.com/daianavaiani0?igsh=MXViN2xqZzFhcWp6eA%3D%3D&utm_source=qr" target="_blank" rel="noopener">https://www.instagram.com/daianavaiani0</a></p>
+                        <p>TikTok: <a href="https://www.tiktok.com/@vdagencyita?_t=ZN-9015f0OvpiN&_r=1" target="_blank" rel="noopener">https://www.tiktok.com/@vdagencyita</a></p>
+                        <p>Sede: Roma, Italia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Section -->
+        <section id="privacy" class="section privacy">
+            <div class="container">
+                <h2>Privacy Policy</h2>
+                <div class="privacy-content">
+                    <h3>Titolare del trattamento</h3>
+                    <p>Il titolare del trattamento dei dati personali è VD Agency con sede in Roma, Italia.</p>
+                    
+                    <h3>Finalità del trattamento</h3>
+                    <p>I dati personali sono trattati per fornire i servizi richiesti e per finalità di marketing, previo consenso.</p>
+                    
+                    <h3>Basi giuridiche del trattamento</h3>
+                    <p>Il trattamento è basato sul consenso dell'interessato e sul nostro legittimo interesse.</p>
+                    
+                    <h3>Periodo di conservazione</h3>
+                    <p>I dati sono conservati per il periodo necessario a fornire i servizi richiesti e in conformità con le normative vigenti.</p>
+                    
+                    <h3>Diritti degli interessati</h3>
+                    <p>gli interessati hanno il diritto di accesso, rettifica, cancellazione, limitazione del trattamento, portabilità dei dati e opposizione al trattamento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cookie Section -->
+        <section id="cookie" class="section cookie">
+            <div class="container">
+                <h2>Cookie Policy</h2>
+                <div class="cookie-content">
+                    <h3>Cosa sono i cookie</h3>
+                    <p>I cookie sono piccoli file di testo che vengono memorizzati sul dispositivo dell'utente quando visita un sito web.</p>
+                    
+                    <h3>Cookie tecnici</h3>
+                    <p>Utilizziamo cookie tecnici necessari per il funzionamento del sito web e per migliorare l'esperienza utente.</p>
+                    
+                    <h3>Cookie statistici</h3>
+                    <p>Utilizziamo cookie statistici per analizzare come i visitatori utilizzano il sito. Questi cookie necessitano del consenso dell'utente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>© <span id="year">2025</span> VD Agency. Tutti i diritti riservati.</p>
+                    <div class="footer-links">
+                        <a href="#privacy">Privacy</a>
+                        <a href="#cookie">Cookie</a>
+                        <a href="#" class="scroll-top">Torna su</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Calendly Script -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
