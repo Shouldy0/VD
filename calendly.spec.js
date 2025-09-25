@@ -1,27 +1,30 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Calendly Widget Tests', () => {
-  test('il div .calendly-inline-widget esiste; dopo 5s se nessun iframe, il fallback #calendly-fallback passa da display:none a visible', async ({ page }) => {
+  test('verifica che il widget Calendly carichi correttamente e abbia fallback', async ({ page }) => {
     await page.goto('http://localhost:5173');
-    
-    // Verifica che il widget Calendly esista
-    await expect(page.locator('.calendly-inline-widget')).toBeVisible();
-    
-    // Simula l'assenza di iframe controllando lo stato iniziale del fallback
-    const fallbackElement = page.locator('#calendly-fallback');
-    
-    // Verifica che inizialmente il fallback sia nascosto (display: none)
-    await expect(fallbackElement).toBeHidden();
-    
-    // Simula il comportamento dello script dopo 5 secondi
-    // (N.B.: In un ambiente reale, potremmo dover disabilitare il caricamento dell'iframe per testare questo)
-    await page.waitForTimeout(5500); // Aspetta 5.5 secondi come simulazione
-    
-    // Controlla se il fallback appare (solo se non viene caricato alcun iframe)
-    const iframeCount = await page.locator('.calendly-inline-widget iframe').count();
-    if(iframeCount === 0) {
-      // Se non ci sono iframe, il fallback dovrebbe apparire
-      await expect(fallbackElement).toBeVisible();
-    }
+
+    // Controlla la presenza del container Calendly
+    const calendlyContainer = page.locator('.calendly-inline-widget');
+    await expect(calendlyContainer).toBeVisible();
+
+    // Controlla che il widget sia stato caricato (iframe presente)
+    const iframe = calendlyContainer.locator('iframe');
+    await expect(iframe).toBeAttached();
+
+    // Controlla che il fallback sia nascosto quando il widget è caricato
+    const fallback = page.locator('#calendly-fallback');
+    await expect(fallback).toBeHidden();
+  });
+
+  test('verifica fallback Calendly quando il widget non carica', async ({ page }) => {
+    // Simula un errore di caricamento del widget Calendly
+    await page.route('**/calendly.com/**', route => route.abort());
+
+    await page.goto('http://localhost:5173');
+
+    // Controlla che il fallback sia visibile quando il widget non carica
+    const fallback = page.locator('#calendly-fallback');
+    await expect(fallback).toBeVisible();
   });
 });
